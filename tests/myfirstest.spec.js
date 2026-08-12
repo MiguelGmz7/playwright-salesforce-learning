@@ -1,5 +1,5 @@
 // const {default:test} = require(@playwirght/test)
-const {test} = require("@playwright/test");
+const {test, expect} = require("@playwright/test");
 
 test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async function ()" and we get the browser parameter from playwrigth/test
     //Playwright Code
@@ -8,6 +8,7 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
     const page = await context.newPage(); //Launch the tab and await to open properly
     await page.goto("https://playwright.dev") //Launch the URL
     console.log(await page.title());
+    expect()
     
     //We need to add await so it can be able to AWAIT for instructions to occur, if not
     // the code will do all at once
