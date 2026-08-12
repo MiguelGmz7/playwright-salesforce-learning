@@ -9,7 +9,7 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
     await page.goto("https://playwright.dev") //Launch the URL
     console.log(await page.title());
     await expect(page).toHaveTitle("Fast and reliable end-to-end testing for modern web apps | Playwright");
-    await expect(page).not.toHaveTitle("Test of negative assertion");
+    await expect(page).not.toHaveTitle("Tes");
 
     
     //We need to add await so it can be able to AWAIT for instructions to occur, if not
