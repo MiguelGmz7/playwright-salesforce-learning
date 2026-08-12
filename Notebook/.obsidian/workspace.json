@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "How to Create a Free developer edition.md",
+                "file": "Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to Create a Free developer edition"
+              "title": "Setup"
             }
           }
         ],
@@ -206,8 +206,8 @@
   },
   "active": "5b05a5ae50f92eb5",
   "lastOpenFiles": [
-    "Setup.md",
     "How to Create a Free developer edition.md",
+    "Setup.md",
     "Images",
     "Images/Pasted image 20260811155431.png",
     "Images/Pasted image 20260811155310.png",
