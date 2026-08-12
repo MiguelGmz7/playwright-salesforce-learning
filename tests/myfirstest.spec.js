@@ -7,7 +7,7 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
     const context = await browser.newContext(); //Launch the browser and await to open properly
     const page = await context.newPage(); //Launch the tab and await to open properly
     await page.goto("https://playwright.dev") //Launch the URL
-    page.title()
+    console.log(page.title());
     
     //We need to add await so it can be able to AWAIT for instructions to occur, if not
     // the code will do all at once
