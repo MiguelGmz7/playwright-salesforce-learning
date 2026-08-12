@@ -6,7 +6,8 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
     //Step1 launch browser
     const context = await browser.newContext(); //Launch the browser and await to open properly
     const page = await context.newPage(); //Launch the tab and await to open properly
-    page.goto("https://playwright.dev") //Launch the URL
+    await page.goto("https://playwright.dev") //Launch the URL
+    page.title()
     
     //We need to add await so it can be able to AWAIT for instructions to occur, if not
     // the code will do all at once
@@ -19,7 +20,7 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
 test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async function ()" and we get the browser parameter from playwrigth/test
     //Playwright Code
     //Step1 launch browser
-    page.goto("https://playwright.dev") //Launch the URL
+    await page.goto("https://playwright.dev") //Launch the URL
     
     //We need to add await so it can be able to AWAIT for instructions to occur, if not
     // the code will do all at once
