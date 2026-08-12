@@ -1,10 +1,10 @@
 // const {default:test} = require(@playwirght/test)
 const {test} = require("@playwright/test");
 
-test('My First test', async ()=>{
+test('My First test', async ()=>{ // "async ()=>" == "async function ()"
     //Playwright Code
     //Step1 launch 
-    await
+    await //to be able to use await we need to make this function an async function
     //Step2 Enter Credentials
     //Step3 Click Sign Button
 
