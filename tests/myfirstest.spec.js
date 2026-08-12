@@ -1,3 +1,1 @@
-const test = require("node:test");
-
-require(@playwirght/test)
+const {default:test} = require(@playwirght/test)
