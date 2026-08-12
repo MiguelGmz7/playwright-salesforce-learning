@@ -16,7 +16,7 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
 
 });
 
-test('Test With Page Context', async ({browser})=>{ // "async ()=>" == "async function ()" and we get the browser parameter from playwrigth/test
+test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async function ()" and we get the browser parameter from playwrigth/test
     //Playwright Code
     //Step1 launch browser
     page.goto("https://playwright.dev") //Launch the URL
