@@ -7,9 +7,9 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
     const context = await browser.newContext(); //Launch the browser and await to open properly
     const page = await context.newPage(); //Launch the tab and await to open properly
     await page.goto("https://playwright.dev") //Launch the URL
-    console.log(await page.title());
+    console.log(await page.title()); //every time we use the browser or page we will need to use await
     await expect(page).toHaveTitle("Fast and reliable end-to-end testing for modern web apps | Playwright");
-    await expect(page).not.toHaveTitle("Tes");
+    await expect(page).not.toHaveTitle("Tesing of negative assertion");
 
     
     //We need to add await so it can be able to AWAIT for instructions to occur, if not
