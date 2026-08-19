@@ -4,5 +4,7 @@ test("Salesforce UI interactions", async({page})=> {
 
     await page.goto("https://login.salesforce.com");
 
-    await expect(page).toHaveTitle("")
+    await expect(page).toHaveTitle("Login | Salesforce");
+
+    await page.locator("#")
 });
