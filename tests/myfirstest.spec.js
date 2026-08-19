@@ -43,5 +43,7 @@ test('Error login Web Automation sauce lab', async({page})=>{ //Check notebook N
     await page.locator("#login-button").click();
     
     console.log(await page.locator("[data-test='error']").textContent())
+
+    await expect(page.locator("[data-test='error']")).toContainText();
 });
 
