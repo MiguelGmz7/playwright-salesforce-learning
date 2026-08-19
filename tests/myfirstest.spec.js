@@ -42,6 +42,6 @@ test('Error login Web Automation sauce lab', async({browser})=>{ //Check noteboo
     await page.locator("#password").fill("");
     await page.locator("#login-button").click();
     
-    await expecpage.locator("[data-test='error']")).
+    console.log(await page.locator("[data-test='error']").textContent())
 });
 
