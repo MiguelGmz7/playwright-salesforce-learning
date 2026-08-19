@@ -15,4 +15,9 @@ input#user-name or #user-name
 ```
 
 # Using class
-*tagname.class* 
+*tagname.class* or *.class*
+```
+input.form_input or .form_input
+```
+
+# Using Attribute 
