@@ -33,12 +33,10 @@ test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async funct
 
 });
 
-test('Web Automation sauce lab', async({browser})=>{
+test('Web Automation sauce lab', async({browser})=>{ //Check notebook 
     await page.goto("https://www.saucedemo.com/"):
     console.log(await page.title);
     await expect(page).toHaveTitle("Swag Labs");
 
 
-    //Using CSS for locator of elements
-    <input class="input_error form_input" placeholder="Username" data-test="username" id="user-name" autocorrect="off" autocapitalize="none" type="text" value="" name="user-name"></input>
 });
