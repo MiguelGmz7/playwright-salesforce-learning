@@ -44,6 +44,6 @@ test('Error login Web Automation sauce lab', async({page})=>{ //Check notebook N
     
     console.log(await page.locator("[data-test='error']").textContent())
 
-    await expect(page.locator("[data-test='error']")).toContainText();
+    await expect(page.locator("[data-test='error']")).toContainText("Epic sadface: Password is required");
 });
 
