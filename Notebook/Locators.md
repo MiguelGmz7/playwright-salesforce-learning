@@ -7,3 +7,6 @@ Every one of these elements can be find in the dom, for example the HTML tag for
 <input class="input_error form_input" placeholder="Username" data-test="username" id="user-name" autocorrect="off" autocapitalize="none" type="text" value="" name="user-name">
 ```
 
+We have 3 ways of finding this selector using playwright
+# Using ID
+*'tagname:*
