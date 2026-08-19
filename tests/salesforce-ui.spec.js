@@ -1,6 +1,6 @@
 const {test, expect} = require("@playwright/test");
 
-test("Salesforce UI interactions", async({page})=> {
+test("Salesforce Blank Login", async({page})=> {
 
     await page.goto("https://login.salesforce.com");
 
