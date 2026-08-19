@@ -38,5 +38,6 @@ test('Web Automation sauce lab', async({browser})=>{ //Check notebook Notebook\L
     console.log(await page.title);
     await expect(page).toHaveTitle("Swag Labs");
 
+    await page.locator("#user")
 
 });
