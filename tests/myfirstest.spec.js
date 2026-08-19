@@ -33,7 +33,7 @@ test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async funct
 
 });
 
-test('Web Automation sauce lab', async({browser})=>{ //Check notebook Notebook\Locators.md
+test('Error login Web Automation sauce lab', async({browser})=>{ //Check notebook Notebook\Locators.md
     await page.goto("https://www.saucedemo.com/");
     console.log(await page.title);
     await expect(page).toHaveTitle("Swag Labs");
@@ -42,5 +42,6 @@ test('Web Automation sauce lab', async({browser})=>{ //Check notebook Notebook\L
     await page.locator("#password").fill("");
     await page.locator("#login-button").click();
     
+    await expect(page).
 });
 
