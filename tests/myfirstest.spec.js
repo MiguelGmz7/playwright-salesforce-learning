@@ -40,5 +40,5 @@ test('Web Automation sauce lab', async({browser})=>{
 
 
     //Using CSS for locator of elements
-    
+    <input class="input_error form_input" placeholder="Username" data-test="username" id="user-name" autocorrect="off" autocapitalize="none" type="text" value="" name="user-name"></input>
 });
