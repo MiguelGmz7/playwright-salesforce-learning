@@ -7,7 +7,7 @@ test("Salesforce UI interactions", async({page})=> {
     await expect(page).toHaveTitle("Login | Salesforce");
 
     await page.locator("#username").fill("")
-    await page.locator("Login").click();
+    await page.locator("#Login").click();
 
-    await expect(page.locator("er"))
+    await expect(page.locator("#error")).toHaveText("Error: ingrese su nombre de usuario.");
 });
