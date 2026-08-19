@@ -10,6 +10,6 @@ test.beforeAll(async() => {
 
     page = await context.newPage();
     await page.goto("https://login.salesforce.com");
+    await page.locator("#username").fill(process.env.USERNAME);
 
-    
 });
