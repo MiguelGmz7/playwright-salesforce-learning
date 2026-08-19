@@ -6,5 +6,5 @@ test("Salesforce UI interactions", async({page})=> {
 
     await expect(page).toHaveTitle("Login | Salesforce");
 
-    await page.locator("#")
+    await page.locator("#username").fill("miguel.gomez.lopez.87b487d1c137@agentforce.com")
 });
