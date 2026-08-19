@@ -35,7 +35,7 @@ test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async funct
 
 test('Error login Web Automation sauce lab', async({page})=>{ //Check notebook Notebook\Locators.md
     await page.goto("https://www.saucedemo.com/");
-    console.log(await page.title);
+    console.log(await page.title());
     await expect(page).toHaveTitle("Swag Labs");
 
     await page.locator("#user-name").fill("standard_user");
