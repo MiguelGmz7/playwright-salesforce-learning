@@ -22,4 +22,8 @@ input.form_input or .form_input
 
 # Using Attribute 
 we can identify the object using any locator
-*[attribute+]*
+*[attribute='value']*
+```
+[type='text'] or [data-test]='username'
+```
+
