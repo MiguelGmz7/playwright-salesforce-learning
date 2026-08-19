@@ -44,4 +44,6 @@ test('Web Automation sauce lab', async({browser})=>{ //Check notebook Notebook\L
     
 });
 
-test
+test('Web Automation Salesforce', async({browser})=>{
+    
+});
