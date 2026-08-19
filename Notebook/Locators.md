@@ -9,4 +9,7 @@ Every one of these elements can be find in the dom, for example the HTML tag for
 
 We have 3 ways of finding this selector using playwright
 # Using ID
-*'tagname:*
+*tagname#id* or just *#id*
+```HTML
+input
+```
