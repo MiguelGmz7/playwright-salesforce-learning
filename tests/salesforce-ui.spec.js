@@ -9,5 +9,5 @@ test("Salesforce UI interactions", async({page})=> {
     await page.locator("#username").fill("")
     await page.locator("#Login").click();
 
-    await expect(page.locator("#error")).toHaveText("Error: Please enter your username");
+    await expect(page.locator("#error")).toHaveText("Error: Please enter your username.");
 });
