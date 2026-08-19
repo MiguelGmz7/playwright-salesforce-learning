@@ -4,6 +4,9 @@ let page;
 
 test.beforeAll(async() => {
     context = await chromium.launchPersistentContext(userDataDirectory, {
-        
-    }) 
+        headless = false,
+        args = ['--start-maximized'],
+    });
+
+    page = await context.newPage();
 });
