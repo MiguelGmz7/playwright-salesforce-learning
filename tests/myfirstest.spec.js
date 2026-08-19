@@ -36,6 +36,9 @@ test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async funct
 test('Web Automation sauce lab', async({browser})=>{
     await page.goto("https://www.saucedemo.com/"):
     console.log(await page.title);
+    await expect(page).toHaveTitle("Swag Labs");
 
-    await expect(page)
+
+    //Using CSS for locator of elements
+    
 });
