@@ -32,3 +32,7 @@ test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async funct
 
 
 });
+
+test('Web Automation sauce lab', async({browser})=>{
+    
+})
