@@ -12,7 +12,7 @@ test("Salesforce Blank Login", async({page})=> {
     await expect(page.locator("#error")).toHaveText("Error: Please enter your username.");
 });
 
-test("Salesforce Blank Login", async({page})=> {
+test("Salesforce Successfull Login", async({page})=> {
 
     await page.goto("https://login.salesforce.com");
 
