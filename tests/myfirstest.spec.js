@@ -43,8 +43,6 @@ test('Login without passsword (Web Automation sauce lab)', async({page})=>{ //Ch
     await page.locator("#login-button").click();
     
     console.log(await page.locator("[data-test='error']").textContent())
-    console.log(process.env.USER);
-    console.log(process.env.PASSWORD);
     await expect(page.locator("[data-test='error']")).toContainText("Epic sadface: Password is required");
 });
 

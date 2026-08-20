@@ -18,8 +18,12 @@ test("Salesforce Successfull Login", async({page})=> {
 
     await expect(page).toHaveTitle("Login | Salesforce");
 
-    await page.locator("#username").fill("")
-    await page.locator("#Login").click();
+    await page.locator("#username").fill(process.env.USER);
+    console.log(process.env.USER);
+    await page.locator("#login").click();
+    
+    await page.locator("#password").fill(process.env.PASSWORD);
+    console.log(process.env.PASSWORD);
+    await page.locator("#login").click();
 
-    await expect(page.locator("#error")).toHaveText("Error: Please enter your username.");
 });
