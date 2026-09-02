@@ -52,6 +52,21 @@ npx playwright show-report
 
 ---
 
+## Cookie / MFA Test (`cookieTest.spec.js`)
+
+To use this test you need to run it in **headed mode** so you can interact with the MFA prompt:
+
+```bash
+npx playwright test tests/cookieTest.spec.js --headed
+```
+
+When the MFA code input appears:
+
+1. Check your email for the MFA code.
+2. **Paste** the code into the Playwright console — do **not** click *Save* manually; let the test handle it.
+
+---
+
 ## Project Structure
 
 ```
