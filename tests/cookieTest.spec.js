@@ -15,8 +15,8 @@ test.beforeAll("Salesforce Successfull Login", async({browser})=> {
 
     await expect(page).toHaveTitle("Login | Salesforce");
 
-    await page.locator("#username").fill(process.env.USER_SF);
-    console.log(process.env.USER_SF);
+    await page.locator("#username").fill(process.env.SF_USERNAME);
+    console.log(process.env.SF_USERNAME);
     await page.locator("#Login").click();
     
     await page.locator("#password").fill(process.env.PASSWORD);
@@ -60,8 +60,8 @@ test("Salesforce Login With Saved Session", async ({ page }) => {
 
         // await expect(page).toHaveTitle("Login | Salesforce");
 
-        await page.locator("#username").fill(process.env.USER_SF);
-        console.log(process.env.USER_SF);
+        await page.locator("#username").fill(process.env.SF_USERNAME);
+        console.log(process.env.SF_USERNAME);
         await page.locator("#Login").click();
     
         await page.locator("#password").fill(process.env.PASSWORD);
