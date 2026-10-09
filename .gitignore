@@ -11,3 +11,5 @@ screenshots/
 session
 cert
 .sf
+package-lock.json
+package.json
