@@ -13,14 +13,12 @@ test("Contracts", async ({ page }) => {
   // Equivalent to Copado/QForce: JWTAuthenticate, followed by JWTLogin.
   const session = await jwtAuthenticate();
   await jwtLogin(page, session, "/lightning/o/Contract/list?filterName=AllContracts");
-  await page.screenshot({ path: "screenshots/contracts.png" });
 });
 
 test("Accounts", async ({ page }) => {
   // Equivalent to Copado/QForce: JWTAuthenticate, followed by JWTLogin.
   const session = await jwtAuthenticate();
   await jwtLogin(page, session, "/lightning/o/Account/list?filterName=AllAccounts");
-  await page.screenshot({ path: "screenshots/accounts.png" });
 });
 
 test("Create a new Account", async ({ page }) => {
@@ -41,5 +39,4 @@ test("Create a new Account", async ({ page }) => {
   // Assert Account Owner link
   await expect(page.getByRole('link', { name: 'Miguel Gomez' })).toBeVisible();
 
-  await page.screenshot({ path: "screenshots/new_account.png" });
 });
