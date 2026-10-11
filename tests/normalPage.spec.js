@@ -7,7 +7,7 @@ test('Test With Browser Context', async ({browser})=>{ // "async ()=>" == "async
     const context = await browser.newContext(); //Launch the browser and await to open properly
     const page = await context.newPage(); //Launch the tab and await to open properly
     await page.goto("https://playwright.dev") //Launch the URL
-    console.log(await page.title()); //every time we use the browser or page we will need to use await
+    // console.log(await page.title()); //every time we use the browser or page we will need to use await
     await expect(page).toHaveTitle("Fast and reliable end-to-end testing for modern web apps | Playwright");
     await expect(page).not.toHaveTitle("Tesing of negative assertion");
 
@@ -35,14 +35,14 @@ test('Test With Page Context', async ({page})=>{ // "async ()=>" == "async funct
 
 test('Login without passsword (Web Automation sauce lab)', async({page})=>{ //Check notebook Notebook\Locators.md
     await page.goto("https://www.saucedemo.com/");
-    console.log(await page.title());
+    // console.log(await page.title());
     await expect(page).toHaveTitle("Swag Labs");
 
     await page.locator("#user-name").fill("standard_user");
     await page.locator("#password").fill("");
     await page.locator("#login-button").click();
     
-    console.log(await page.locator("[data-test='error']").textContent())
+    // console.log(await page.locator("[data-test='error']").textContent())
     await expect(page.locator("[data-test='error']")).toContainText("Epic sadface: Password is required");
 });
 
