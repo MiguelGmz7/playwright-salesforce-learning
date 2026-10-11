@@ -22,13 +22,6 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       
-      # - name: Write JWT private key
-      #   run: |
-      #     mkdir -p cert
-      #     printf '%s\n' "$SF_PRIVATE_KEY" > cert/server.key
-      #   env:
-      #     SF_PRIVATE_KEY: ${{ secrets.SF_PRIVATE_KEY }}
-
       - name: Run Tests
         env:
           CI: true
@@ -38,7 +31,7 @@ jobs:
           SF_LOGIN_URL: ${{ secrets.SF_LOGIN_URL }}
           SF_SANDBOX: ${{ secrets.SF_SANDBOX }}
           SF_HOME_URL: ${{ secrets.SF_HOME_URL }}
-          SF_PRIVATE_KEY_PATH: ${{ secrets.SF_PRIVATE_KEY }}
+          SF_PRIVATE_KEY: ${{ secrets.SF_PRIVATE_KEY }}
         run: npx playwright test
 
       - name: Upload Playwright Results

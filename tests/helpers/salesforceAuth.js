@@ -59,6 +59,7 @@ function createJwtAssertion(options = {}) {
   );
   const privateKey =
     options.privateKey ??
+    getEnv("SF_PRIVATE_KEY") ??
     fs.readFileSync(
       path.resolve(
         getEnv("SF_PRIVATE_KEY_PATH", "salesforce_private_key_path") || "server.key",
