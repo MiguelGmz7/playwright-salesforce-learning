@@ -6,10 +6,8 @@ test.describe("Account creation using POM", () => {
     let accountPage;
 
     test.beforeEach(async ({ page }) => {
-        const setupPage = new SetupPage(page);
-        await setupPage.open("Accounts");
-
         accountPage = new AccountPage(page);
+        await accountPage.navigateDirectly()
     });
 
     ["Hot", "Warm", "Cold"].forEach(raiting => {
