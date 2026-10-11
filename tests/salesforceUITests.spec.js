@@ -21,7 +21,7 @@ test("Accounts", async ({ page }) => {
   await jwtLogin(page, session, "/lightning/o/Account/list?filterName=AllAccounts");
 });
 
-test.only("Create a new Account", async ({ page }) => {
+test("Create a new Account", async ({ page }) => {
   // Equivalent to Copado/QForce: JWTAuthenticate, followed by JWTLogin.
   const session = await jwtAuthenticate();
   await jwtLogin(page, session, "/lightning/o/Account/list?filterName=AllAccounts");
